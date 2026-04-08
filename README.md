@@ -50,7 +50,3 @@ The project was developed step-by-step from individual tasks to a single integra
 All data structures were implemented exactly as specified.  
 No external libraries were used.  
 The program compiles and runs without errors, handles invalid input gracefully, and fully meets the functionality requirements.
-
-**Repository:** [Add your GitHub link here]
-
-Ready for submission and defense.
