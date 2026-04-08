@@ -22,6 +22,10 @@ public class BankingSystem {
         accounts.add(new BankAccount("ACC001", "Ali", 150000));
         accounts.add(new BankAccount("ACC002", "Sara", 220000));
 
+        billQueue.offer("Electricity Bill");
+        billQueue.offer("Internet Bill");
+        billQueue.offer("Mobile Phone Bill");
+
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
