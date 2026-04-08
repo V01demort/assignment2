@@ -1,7 +1,7 @@
 # Banking System - Physical & Logical Data Structures
 
-**Student:** Nikita [Your Full Name]  
-**Group:** [Your Group]
+**Student:** Nikita
+**Group:** IT-2501
 
 ## Project Overview
 This project implements a complete Mini Banking System that integrates all required data structures:
