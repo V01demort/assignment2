@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class BankingSystem {
     static class BankAccount {
         String accountNumber;
@@ -14,10 +12,10 @@ public class BankingSystem {
     }
 
     public static void main(String[] args) {
-        LinkedList<BankAccount> accounts = new LinkedList<>();
-        Stack<String> transactionHistory = new Stack<>();
-        Queue<String> billQueue = new LinkedList<>();
-        Queue<BankAccount> accountRequests = new LinkedList<>();
+        java.util.LinkedList<BankAccount> accounts = new java.util.LinkedList<>();
+        java.util.Stack<String> transactionHistory = new java.util.Stack<>();
+        java.util.Queue<String> billQueue = new java.util.LinkedList<>();
+        java.util.Queue<BankAccount> accountRequests = new java.util.LinkedList<>();
 
         accounts.add(new BankAccount("ACC001", "Ali", 150000));
         accounts.add(new BankAccount("ACC002", "Sara", 220000));
@@ -26,7 +24,7 @@ public class BankingSystem {
         billQueue.offer("Internet Bill");
         billQueue.offer("Mobile Phone Bill");
 
-        Scanner scanner = new Scanner(System.in);
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
 
         while (true) {
             System.out.println("\n=== MAIN MENU ===");
@@ -166,9 +164,9 @@ public class BankingSystem {
         scanner.close();
     }
 
-    private static void depositOrWithdraw(LinkedList<BankAccount> accounts,
-                                          Stack<String> history,
-                                          Scanner scanner,
+    private static void depositOrWithdraw(java.util.LinkedList<BankAccount> accounts,
+                                          java.util.Stack<String> history,
+                                          java.util.Scanner scanner,
                                           boolean isDeposit) {
         System.out.print("Enter username: ");
         String user = scanner.nextLine();
@@ -201,7 +199,7 @@ public class BankingSystem {
         }
     }
 
-    private static BankAccount findAccount(LinkedList<BankAccount> accounts, String username) {
+    private static BankAccount findAccount(java.util.LinkedList<BankAccount> accounts, String username) {
         for (BankAccount acc : accounts) {
             if (acc.username.equals(username)) {
                 return acc;
